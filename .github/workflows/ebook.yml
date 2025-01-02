@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0.7'
     - name: Get git tag
       id: get_ref
       run: echo ::set-output name=REF::${GITHUB_REF/refs\/tags\//}

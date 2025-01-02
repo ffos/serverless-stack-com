@@ -82,9 +82,7 @@ def build_chapter chapter_data
 
     chapter.force_encoding(::Encoding::UTF_8)
 
-    # Update for Ruby 3.2
-    # chapter_front_matter = YAML.load_file("../../_chapters/#{chapter_name}.md")
-    chapter_front_matter = YAML::load(File.read("../../_chapters/#{chapter_name}.md"))
+    chapter_front_matter = YAML.load_file("../../_chapters/#{chapter_name}.md")
 
     #################
     # Validations
