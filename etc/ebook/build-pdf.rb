@@ -84,7 +84,7 @@ def build_chapter chapter_data
 
     # Update for Ruby 3.2
     # chapter_front_matter = YAML.load_file("../../_chapters/#{chapter_name}.md")
-    chapter_front_matter = YAML.safe_load_file("../../_chapters/#{chapter_name}.md", permitted_classes: [Time])
+    chapter_front_matter = YAML.unsafe_load_file("../../_chapters/#{chapter_name}.md")
 
     #################
     # Validations
