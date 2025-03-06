@@ -223,7 +223,7 @@ automating-deployments:
         url: /chapters/setting-up-the-sst-console.html
 #      - page: Configure secrets in Seed
 #        url: /chapters/configure-secrets-in-seed.html
-      - page: Deploying Through the SST Console
+      - page: Deploying through the SST Console
         url: /chapters/deploying-through-the-sst-console.html
 
 #monitor-debug-errors:
